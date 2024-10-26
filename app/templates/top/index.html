@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invaders Game - Start Screen</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Invaders Game</h1>
+      <p>TOP画面です。ヘッダーとかは後で作るよ。</p>
+
+      <!-- ユーザー一覧の表示 -->
+      <h2>ユーザー一覧</h2>
+      <ul>
+        {% for user in users %}
+        <li>{{ user.name }} - {{ user.email }}</li>
+        {% endfor %}
+      </ul>
+
+      <button class="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+      function startGame() {
+        // ゲーム開始のURLにリダイレクト
+        window.location.href = "{{ url_for('video_feed.video_feed_route') }}";
+      }
+    </script>
+  </body>
+</html>
