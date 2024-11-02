@@ -1,0 +1,52 @@
+/* 全体の背景設定 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* コンテナ */
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* タイトル */
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+/* 説明文 */
+p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+/* スタートボタン */
+.start-btn {
+  padding: 15px 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  background: #ff416c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background: #ff4b2b;
+}

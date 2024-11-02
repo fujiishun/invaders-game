@@ -1,0 +1,5 @@
+flask
+pygame
+pillow
+Flask-SQLAlchemy
+psycopg2
